@@ -47,7 +47,10 @@ const obj = {
     }
 }
 
-console.log(obj); // will print the above object whereas the native console would only print `{ a: { deeply: { nested: [Object] } } }`
+console.log(obj); // will print the above object whereas the native console would 
+                  // print '{ a: { deeply: { nested: [Object] } } }'. 
+                  // You could achieve the same with `console.dir` but would have to 
+                  // add a configuration object
 
 
 // `console.file` writes the log to a file of you choice
