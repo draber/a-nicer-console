@@ -1,0 +1,11 @@
+{
+  "name": "console-extra-test",
+  "version": "1.0.0",
+  "description": "`console` extended with support for colors on `info|warning|error|success` and better support for objects",
+  "main": "index.js",
+  "author": "Dieter Raber",
+  "license": "MIT",
+  "dependencies": {
+    "console-extra": "file:console-extra"
+  }
+}

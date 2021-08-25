@@ -1,0 +1,11 @@
+{
+    "log": "logs/my-log.txt",
+    "colors": {
+       "error": "hsl(0, 100%, 50%)",
+       "warn": "rgb(255, 204, 0)",
+       "info": "blue",
+       "success": "#ACDB4E",
+       "log": "reset",
+       "customFunction": "rebeccapurple"
+    }
+ }

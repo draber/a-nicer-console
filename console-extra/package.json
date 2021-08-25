@@ -1,0 +1,13 @@
+{
+  "name": "console-extra",
+  "version": "1.0.0",
+  "description": "`console` extended with support for colors on `info|warning|error|success` and better support for objects. `success` is an addition",
+  "main": "index.js",
+  "author": "Dieter Raber",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "fs-extra": "^10.0.0",
+    "color": "^4.0.1"
+  }
+}
