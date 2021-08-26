@@ -1,4 +1,4 @@
-# console-extra
+# a-nicer-console
 Fancy extras for the Node console.
 
 ## Features
@@ -10,16 +10,16 @@ This is a drop-in replacement for Node's native console; all the original `conso
 - You can add your own functions by adding a key-value pair to the color configuration. This will, just like `console.success`, be a colorized version of `console.log`
 
 ## Installation
-You can add `console-extra` to your project with:
+You can add `a-nicer-console` to your project with:
 ```bash
-npm i console-extra -D
+npm i a-nicer-console -D
 ```
 
 ## Usage
 
 ```javascript
-import console from 'console-extra' 
-// alternatively: const console = require('console-extra')
+import console from 'a-nicer-console' 
+// alternatively: const console = require('a-nicer-console')
 
 // Colored console output when using `console.error|warn|info|success`
 console.error('This is an error message');
@@ -57,7 +57,7 @@ The default configuration looks like this:
     }
 }
 ```
-To overwrite these values create a file called `console-config.json` at the root of your project, all values are optional. This package contains a file called [console-config.example](https://github.com/draber/console-extra/blob/main/console-config.example) that you could use as a template. 
+To overwrite these values create a file called `console-config.json` at the root of your project, all values are optional. This package contains a file called [console-config.example](https://github.com/draber/a-nicer-console/blob/main/console-config.example) that you could use as a template. 
 
 ### Acceptable values
 
@@ -98,5 +98,5 @@ Your `console-config.json` should look about like this, again, all values are op
 
 ## Credits
 
-Under the hood, `console-extra` uses [chalk](https://www.npmjs.com/package/chalk) and a bit of [fs-extra](https://www.npmjs.com/package/fs-extra). And then of course whatever they are using as well. Thanks to all authors for their work!
+Under the hood, `a-nicer-console` uses [chalk](https://www.npmjs.com/package/chalk) and a bit of [fs-extra](https://www.npmjs.com/package/fs-extra). And then of course whatever they are using as well. Thanks to all authors for their work!
 

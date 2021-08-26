@@ -1,5 +1,5 @@
 {
-  "name": "console-extra",
+  "name": "a-nicer-console",
   "version": "1.0.0",
   "description": "`console` extended with support for colors on `info|warning|error|success` and better support for objects",
   "main": "src",
