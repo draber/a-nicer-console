@@ -1,0 +1,11 @@
+{
+   "log": "logs/my-log.txt",
+   "colors": {
+      "error": [255, 0, 0],
+      "warn": "#ff0",
+      "info": "cyan",
+      "success": "#00ff00",
+      "log": "reset",
+      "customFunction": [253, 134, 18]
+   }
+}

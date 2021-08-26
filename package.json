@@ -1,11 +1,21 @@
 {
-  "name": "console-extra-test",
+  "name": "console-extra",
   "version": "1.0.0",
   "description": "`console` extended with support for colors on `info|warning|error|success` and better support for objects",
-  "main": "index.js",
+  "main": "src",
   "author": "Dieter Raber",
   "license": "MIT",
   "dependencies": {
-    "console-extra": "file:console-extra"
-  }
+    "chalk": "^4.1.2",
+    "fs-extra": "^10.0.0"
+  },
+  "scripts": {
+    "test": "node ./tests/cjs.js & node ./tests/esm.mjs"
+  },
+  "keywords": [
+    "console",
+    "logger",
+    "color",
+    "file logger"
+  ]
 }
