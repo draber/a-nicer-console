@@ -98,5 +98,5 @@ Your `console-config.json` should look about like this, again, all values are op
 
 ## Credits
 
-Under the hood, `a-nicer-console` uses [chalk](https://www.npmjs.com/package/chalk) and a bit of [fs-extra](https://www.npmjs.com/package/fs-extra). And then of course whatever they are using as well. Thanks to all authors for their work!
+Under the hood, `a-nicer-console` uses [chalk](https://www.npmjs.com/package/chalk) and a bit of [fs-extra](https://www.npmjs.com/package/fs-extra). And then of course whatever they are using as well. Thanks to the authors for their work!
 
