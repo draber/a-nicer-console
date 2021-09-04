@@ -1,6 +1,6 @@
 {
   "name": "a-nicer-console",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "`console` extended with support for colors on `info|warning|error|success` and better support for objects",
   "main": "src",
   "author": "Dieter Raber",
@@ -16,6 +16,15 @@
     "console",
     "logger",
     "color",
-    "file logger"
-  ]
+    "file logger",
+    "console colors"
+  ],  
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/draber/a-nicer-console.git"
+  },
+  "bugs": {
+    "url": "https://github.com/draber/a-nicer-console/issues"
+  },
+  "homepage": "https://github.com/draber/a-nicer-console#readme",
 }
