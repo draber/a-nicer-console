@@ -3,16 +3,16 @@ Fancy extras for the Node console.
 
 ## Features
 This is a drop-in replacement for Node's native console; all the original `console` functions remain intact.
-- Colored console output when using `console.error|warn|info|success`
-- Logging of deeply nested objects
-- Adds function `console.success` which is essentially `console.log` in a, by default, green tone
-- Adds function `console.file` which writes the log to a file instead of `stdout`
-- You can add your own functions by adding a key-value pair to the color configuration. This will, just like `console.success`, be a colorized version of `console.log`
+- Adds colors to the output when using `console.error|warn|info|success`
+- Logs deeply nested objects
+- Adds the function `console.success` which is essentially `console.log` in a, by default, green tone
+- Adds the function `console.file` which writes the log to a file instead of `stdout`
+- Allows adding your own functions by adding a key-value pair to the color configuration. This will, just like `console.success`, be a colorized version of `console.log`
 
 ## Installation
 You can add `a-nicer-console` to your project with:
 ```bash
-npm i a-nicer-console -D
+npm i a-nicer-console
 ```
 
 ## Usage
@@ -32,8 +32,7 @@ const obj = { /* some deeply nested Object */ };
 
 // Output the whole object; the native console would only print: 
 // { a: { deeply: { nested: [Object] } } }. 
-// You could achieve the same with `console.dir` but would have to 
-// provide a configuration object.
+// In difference to `console.dir` you don't need to provide a configuration object.
 console.log(obj); 
 
 // Write to a log file, by default
@@ -42,9 +41,9 @@ console.file(obj, 'The large object and this message should be written to your l
 
 ## Configuration
 
-Maybe you like this package but the colors aren’t to your taste. Or maybe you wish to have `console.foo()` in some fancy color. Let’s see how this can be done.
+Maybe you like this package but the colors aren’t to your taste. Or you want to add `console.foo()` in some fancy color. Finally, if you are using a log file, you have to provide the path to this file somewhere. This is where the configuration file comes into the game.
 
-The default configuration looks like this: 
+Let’s see how this works. The default configuration looks like this: 
 ```javascript
 {
     log: 'logs/console.log',
@@ -57,11 +56,11 @@ The default configuration looks like this:
     }
 }
 ```
-To overwrite these values create a file called `console-config.json` at the root of your project, all values are optional. This package contains a file called [console-config.example](https://github.com/draber/a-nicer-console/blob/main/console-config.example) that you could use as a template. 
+To overwrite these values create a file called `console-config.json` at the root of your project, all values are optional. This package contains a file called [console-config.example](https://github.com/draber/a-nicer-console/blob/main/console-config.example) that you can use as a template. 
 
 ### Acceptable values
 
-- [ANSI escape codes](https://github.com/chalk/ansi-styles/blob/main/index.js#L11)
+- [ANSI escape codes](https://github.com/chalk/ansi-styles/blob/main/index.js#L11). Some of these values allow adding formats such as bold or italic etc.
 - RGB arrays (e.g. `[51, 51, 102]`)
 - Colors in hex format (e.g. `#333366` or `#336`)
 
